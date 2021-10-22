@@ -1,0 +1,8 @@
+﻿\begin{tikzpicture}
+  \newcommand{\wavelet}[1]{{exp(-1*#1*#1)}}
+  %\newcommand{\wavelet}[1]{\expanded\wavefunc{#1}}
+  \draw[->] (-4, 0) -- (4, 0) node[right] {$x$};
+  \draw[->] (0, -2) -- (0, 2) node[above] {$y$};
+  \draw[domain=-3:3, smooth, variable=\x, blue] plot ({\x}, \wavelet{\x}) node[above, xshift=1em] {$f(x)=\mathrm e^{-x^2}$};
+ \node[outer sep=0pt,circle, fill=red,inner sep=1pt] (ForceAppli) at (0,\wavelet{0}) {};
+\end{tikzpicture}
