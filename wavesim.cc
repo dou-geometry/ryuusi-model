@@ -1,5 +1,4 @@
 #include<coord.hh>
-#include<settings.hh>
 #include<plot.hh>
 #include<sets.hh>
 
